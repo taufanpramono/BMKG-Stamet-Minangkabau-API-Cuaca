@@ -1,0 +1,302 @@
+
+
+/*EXTERNAL STYLE CSS*/
+/*<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />*/
+
+
+
+/*-----
+STYLE PRAKICU PROVINSI - BERANDA
+----*/
+
+* {
+    width: 100%;
+}
+
+.cuaca-provinsi-sb {
+    background-color: #245064;
+    padding: 40px;
+    border-radius: 20px;
+
+}
+
+.cuaca-provinsi-sb h1 {
+    color : white;
+    font-size: 30px;
+}
+
+.cuaca-provinsi-sb span {
+    color : white;
+}
+
+.cuaca-sb {
+    font-size: 30px;
+    color : yellow;
+}
+
+.column-2 {
+    display: inline-flex;
+    gap : 15px;
+}
+
+@media(max-width:480px) {
+    .cuaca-provinsi-sb span {
+    color : white;
+    font-size : 15px;
+}
+
+    .column-2 {
+    display: inline-flex;
+    gap : 10px;
+}
+}
+
+
+/*-----
+STYLE PRAKICU KECAMATAN & KAB KOTA
+----*/
+
+
+.table-container {
+    width: 100%;
+    max-width: 1200px;
+    overflow-x: auto;
+
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+
+.content-table {
+    font-size:12px; 
+    line-height:15px;
+}
+
+.img-kontent {
+    width:10px;
+}
+
+
+
+
+/*data pengaturan kecamatan*/
+
+
+.master-container {
+    display: flex;
+}
+
+.master-container-2 {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center; 
+    width: 50%;
+}
+
+.container-2 {
+    width: 50%;
+}
+
+.form-group {
+    display: flex; 
+}
+
+select {
+    margin-right: 25px; 
+    margin-left: -12px;
+}
+
+input[type="submit"] {
+    padding: 10px 15px; 
+    background-color: #007bff; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3; /* Warna latar belakang saat hover */
+}
+
+
+@media (max-width: 768px) {
+    th, td {
+        padding: 10px 8px;
+    }
+    
+    .content-table {
+    font-size:12px; 
+
+    }
+    
+    .img-kontent {
+    width:10px;
+}
+
+    .km-hour {
+    font-size: 10px;
+}
+
+.container {
+ width : 100%;
+    
+}
+
+.container-2 {
+    display : none;
+}
+
+.form-group {
+    display: inline;
+}
+
+select {
+    margin-top : 10px;
+    margin-left: 0px;
+    width : 100%;
+}
+
+input[type="submit"] {
+    width : 100%;
+    margin-top :10px;
+
+}
+
+}
+
+
+/*-----
+STYLE CAROUSEL - BERANDA PRAKICU KAB, KOTA
+----*/
+
+
+.card-wrapper{
+    max-width: 1100px;
+    margin: 0 60px 35px;
+    padding: 20px 20px;
+    overflow: hidden;
+}
+
+.card-list .card-item{
+    list-style: none;
+}
+
+.card-list .card-item .card-link{
+    user-select: none;
+    display: block;
+    background: #fff;
+    padding: 18px;
+    border-radius: 12px;
+    text-decoration: none;
+    border: 2px solid #5372f0;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+    transition: 0.2s ease;
+}
+
+.card-list .card-item .card-link:active{
+    cursor: grabbing;
+}
+
+.card-list .card-item .card-link:hover{
+    border-color: #5372f0;
+}
+
+.card-list .card-link .card-image{
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card-list .card-link .badge{
+    color: blue;
+    margin: 16px 0 18px;
+    padding: 8px 16px;
+    font-weight: 500;
+    font-size: 0.95rem;
+    background: #dde4ff;
+    width: fit-content;
+    border-radius: 50px;
+}
+
+.card-list .card-link .card-title{
+    font-size: 20px;
+    color: #000;
+    font-weight: 600;
+}
+
+.card-list .card-link .card-button{
+    height: 35px;
+    width: 35px;
+    color: #5372f0;
+    border-radius: 50%;
+    margin: 30px 0 5px;
+    background: none;
+    cursor: pointer;
+    transform: rotate(-45deg);
+    border: 2px solid #5382f0;
+    transition: 0.4s ease;
+}
+
+.card-list .card-link:hover .card-button{
+    color: #fff;
+    background: #5372f0;
+}
+
+.card-wrapper .swiper-pagination-bullet{
+    height: 13px;
+    width: 13px;
+    opacity: 0.5;
+    background: #5372f0;
+}
+
+.card-wrapper .swiper-pagination-bullet-active{
+    opacity: 1;
+}
+
+.card-wrapper .swiper-slide-button{
+    color: #245064;
+    margin-top: -35px;
+} 
+
+selector h4 {
+    margin-bottom: -20px;
+}
+
+
+@media screen and (max-width: 768px){
+    .card-wrapper{
+        margin: 0 10px 25px;
+    }
+
+    .card-wrapper .swiper-slide-button{
+        display: none;
+    }
+}
+
