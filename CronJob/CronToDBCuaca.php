@@ -2,9 +2,9 @@
 
 // Database configuration
 $servername = "localhost";
-$username = "idwordpr_wp852";
-$password = "4(Q3p6xF]S";
-$dbname = "idwordpr_wp852";
+$username = "";
+$password = "";
+$dbname = "";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
